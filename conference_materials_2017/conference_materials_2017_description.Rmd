@@ -154,7 +154,7 @@ __File name for analysis code:__ LICENSE.txt
 
 Please use the following to cite any of the supporting materials herein: 
 
-Kroeger CM, Brown AW. Data and analysis code for published abstract: Use of text-mining and comparative analysis to detect p-hacking in dietary supplement scientific literature. Zenodo. 2018. DOI:  
+Kroeger CM, Brown AW. Data and analysis code for published abstract: Use of text-mining and comparative analysis to detect p-hacking in dietary supplement scientific literature. Zenodo. 2018. DOI: 10.5281/zenodo.1406885  
 
 
 ### Recommended citation for published abstract 
