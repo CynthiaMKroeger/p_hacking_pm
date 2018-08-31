@@ -1,37 +1,42 @@
-Conference Materials 2014
+Conference Materials 2016
 ================
 Cynthia M. Kroeger, Andrew W. Brown
-8/31/2018
+8/28/2018
 
 Project Description
 -------------------
 
-This project was implemented to collect preliminary data for a postdoctoral grant application (F32DK107157) to study common biases and statistical mistakes made in nutrition and obesity research. One such bias is p-hacking. As the poster describes in more detail, this project tested a rapid and high-volume method for detecting p-hacking in scientific literature. This was the start of a larger project, that has since been further developed and presented on. A manuscript with fully-developed methods is now being developed for publication.
+This project was implemented to further develop methods that were originated previously (DOI: 10.5281/zenodo.1406860) as part of a larger project (F32DK107157) to study common biases and statistical mistakes made in nutrition and obesity research. One such bias is p-hacking. As the poster describes in more detail, this project replicated a previously implemented rapid and high-volume method for detecting p-hacking in scientific literature, as well as refined previous methods. Details of these changes are described in more detail below. This work has since been further developed and presented on, and a manuscript with fully-developed methods is now being developed for publication.
+
+An abbreviated description of these two projects is as follows:
+
+-   2014: Initial, manual search in PubMed
+-   2016: Replication of 2014, refinement of search methods, and inclusion of search within PubMed dietary supplement subset
 
 Conference Description
 ----------------------
 
-This work was presented at the American Society for Nutrition (ASN): Advances and Controversies in Clinical Nutrition Annual Scientific Meeting, in National Harbor, Maryland, USA, in 2014.
+This work was presented at The Obesity Society (TOS) Annual Scientific Meeting in New Orleans, Louisiana, USA, in 2016.
 
 Contact Information for Principal Investigator and Corresponding Author
 -----------------------------------------------------------------------
 
 Cynthia M. Kroeger, PhD, Postdoctoral Fellow, Charles Perkins Centre, School of Pharmacy, Faculty of Medicine and Health, The University of Sydney. <cynthia.kroeger@sydney.edu.au>
 
-At the time of presentation, Dr. Kroeger was a PhD student at The University of Illinois at Chicago.
+At the time of presentation, Dr. Kroeger was a Postdoctoral Fellow at The University of Alabama at Birmingham.
 
 Description of Supporting Materials
 -----------------------------------
 
-### Presentation
+### Presentation: Poster
 
 This work was presented as a poster.
 
-**File name for poster:** conference\_materials\_2014\_poster.pdf
+**File name for poster:** conference\_materials\_2016\_poster.pdf
 
 ### Data
 
-**File name for dataset:** conference\_materials\_2014\_data.csv
+**File name for dataset:** conference\_materials\_2016\_data.csv
 
 **Full names and definitions of column headings**
 
@@ -52,17 +57,17 @@ This work was presented as a poster.
 <tr class="odd">
 <td>trial</td>
 <td>study trial</td>
-<td>org = original trial</td>
+<td>org = original trial; rep = replication study</td>
 </tr>
 <tr class="even">
 <td>method</td>
 <td>search string method</td>
-<td>a = method a</td>
+<td>a = method a; b = method b*</td>
 </tr>
 <tr class="odd">
 <td>database</td>
 <td>database data were collected from</td>
-<td>pm = PubMed</td>
+<td>pm = PubMed; dss = PubMed Dietary Supplement Subset</td>
 </tr>
 <tr class="even">
 <td>date</td>
@@ -119,7 +124,7 @@ This work was presented as a poster.
 
 \*Methods are described in section "Methodological details" below.
 
-Data were collected and formatted by Dr. Kroeger.
+These data were collected and formatted by Dr. Kroeger.
 
 ### Methodological details
 
@@ -136,52 +141,112 @@ Data were collected and formatted by Dr. Kroeger.
 
 Asterisks in PubMed are used to indicate wildcards. PubMed returns wildcards and shows the terms returned for manual inspection. Expansion of the 0.05\* term above shows these wildcards expanded. Search 0.05\* is expanded to remove inclusion of the commonly found mention of p &lt; 0.05 in abstracts. PubMed interprets any equality characters (&lt;, =, &gt;) as blank spaces. An asterisk alone could not be used here, as we needed to manually remove references to 0.05. These are not likely to represent values in a bin, because they could represent the entire inequality of p &lt; 0.05 or reference to a significance level threshold.
 
-### PubMed query data file and image
+**Search string details for method b**
 
-A screenshot of the search query conducted on 8/25/14 has been added to assist with clarity and transparency. A .csv file with these data plus extractions times also has been added. This was exported by PubMed after the search. The date column was added manually, as PubMed does not include this in the export of searches.
+``` r
+# p-value bin 0.03: same as method a
+# p-value bin 0.04: same as method a
+# p-value bin 0.05: same as method a
+# p-value bin 0.06: same as method a
+# common tests: (t-test[tiab] OR "t test" OR t-student[tiab] OR anova[tiab] OR ANOVA[tiab] OR ancova[tiab] OR "mixed model"[tiab] OR "parametric tests")
+# atypical tests: (nonparametric[tiab] OR non-parametric[tiab] OR "non parametric" OR wilcoxon-mann-whitney[tiab] OR mann-whitney[tiab] OR u-test[tiab] OR wilcoxon[tiab] OR wlicoxon-rank[tiab] OR "wilcoxon rank"[tiab] OR kruskal-wallis[tiab] OR "kruskal wallis"[tiab] OR log-transformed[tiab] OR "log transformed"[tiab] OR (outlier*[tiab] AND remov*[tiab]))
+```
 
-**File name for query image:** conference\_materials\_2014\_query\_image.pdf
+Reasons for changes:
 
-**File name for query export:** conference\_materials\_2014\_query.csv
+-   Common tests: "t test", t-student, ANOVA, and "parametric tests" were added as they are revelant common tests, and different versions (i.e. addition or removal of a "-") yielded additional results.
+-   Atypical tests: "transformation" was removed, as it was found to yield numerous irrelevant results. "non parametric", wilcoxon-mann-whitney, mann-whitney, u-test, wilcoxon, log-transformed, and "log transformed" were added, as these terms were found to yield additional relevant results.
+
+### PubMed query data file
+
+A .csv file with the search query conducted in PubMed on 5/9/16, plus extractions times also has been added. This was exported by PubMed after the search. The date column was added manually, as PubMed does not include this in the export of searches. The PubMed export for pm\_b\_org\_man and dss\_b\_org\_man could not be located. The search query was documented manually, and these details were added to the data file. This is a testament to the importance of preparing study materials for open sharing during the research process, as apposed to two years later.
+
+**File name for query export:** conference\_materials\_2016\_query.csv
 
 **Definitions of column headings**
 
-| Column Heading | Definition                                      | Possible Values      |
-|----------------|-------------------------------------------------|----------------------|
-| search         | Search number                                   |                      |
-| query          | Query used to search PubMed                     |                      |
-| items          | Number of articles found by search query        |                      |
-| time           | Time search was conducted (U.S.A. Central Time) |                      |
-| date           | Date of search                                  |                      |
-| trial          | Study trial                                     | org = original trial |
-| method         | Search string method                            | a = method a         |
-| database       | Database data were collected from               | pm = PubMed          |
+<table>
+<colgroup>
+<col width="25%" />
+<col width="47%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Heading</th>
+<th>Definition</th>
+<th>Possible Values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>search</td>
+<td>Search number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>query</td>
+<td>Query used to search PubMed</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>items</td>
+<td>Number of articles found by search query</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>time</td>
+<td>Time search was conducted (U.S.A. Central Time)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>date</td>
+<td>Date of search</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>trial</td>
+<td>Study trial</td>
+<td>org = original trial; rep = replication</td>
+</tr>
+<tr class="odd">
+<td>method</td>
+<td>Search string method</td>
+<td>a = method a; b = method b</td>
+</tr>
+<tr class="even">
+<td>database</td>
+<td>Database data were collected from</td>
+<td>pm = PubMed; dss = PubMed Dietary Supplement Subset</td>
+</tr>
+</tbody>
+</table>
 
 ### Analysis code
 
-**File name for analysis code:** conference\_materials\_2014\_code.R
+**File name for analysis code:** conference\_materials\_2016\_code.R
 
 **Study level naming convention:** database\_method\_trial\_mode
 
--   database: pm = PubMed
--   method: a = method a
--   trial: org = original
+-   database: pm = PubMed; dss = PubMed Dietary Supplement Subset
+-   method: a = method a; method b = b
+-   trial: org = original; rep = replication
 -   mode: man = manual search
 
 **Analysis level naming convention:** study\_function
 
--   study: pm\_a\_org\_man
+-   study: pm\_a\_rep\_man, dss\_a\_org\_man, pm\_b\_org\_man, dss\_b\_org\_man
 -   function: xsq = chisq.test; pd = percentage deviation
 
 A Note on How to Replicate this Study
 -------------------------------------
 
-Because data were extracted from PubMed manually on a specific date, one would need to download PubMed history and assess the literature from the point in time noted in the data file, using the methods described in this document. Another option might be to run the search described herein and subtract dates from the date reported in our data file. We have not done this ourselves. However, future work will attempt to replicate these findings in the same literature set at a later date.
+Because data were extracted from PubMed manually on a specific date, one would need to download PubMed history and assess the literature from the point in time noted in the data file, using the methods described in this document. Another option might be to run the search described herein and subtract dates from the date reported in our data file. We have not done this ourselves. However, this work does replicate previous findings in the same literature set at a later date.
 
 Author Contribution
 -------------------
 
-Dr. Kroeger conducted the study, refined the methods, analyzed data, made the poster, and created the open science documents for the repository. Dr. Brown provided editorial assistance with methods, poster preparation, and open science documents. Dr. Allison originated the study, provided editorial assistance with the presentation, and is the senior author of the presentation.
+Dr. Kroeger conducted the study, refined the methods, analyzed data, made the poster, and created the open science documents for the repository. Dr. Brown provided editorial assistance with methods, abstract, and open science documents. Dr. Allison originated the study, provided editorial assistance with the abstract, and is the senior author of the presentation.
 
 License Information
 -------------------
@@ -193,14 +258,19 @@ These materials are licensed under the Creative Commons Attribution Share Alike 
 Citation Information
 --------------------
 
-### Recommended citation for Conference Materials 2014
+### Recommended citation for conference\_materials\_2016
 
 Please use the following to cite any of the supporting materials herein:
 
-Kroeger CM, Brown AW. Data and analysis code from published abstract: Evidence of p-value fiddling using a rapid, high-volume, systematic method. Zenodo. 2018. DOI: 10.5281/zenodo.1406860
+Kroeger CM, Brown AW. Data from published abstract: Simple text-mining to detect comparative p-hacking is sensitive to text searching variations. Zenodo. 2018. DOI:
 
-### Recommended citation for published 2014 abstract
+### Recommended citation for published abstract
 
 Please use the following to cite the published abstract:
 
-Kroeger CM, Brown AW, Allison DB. Evidence of p-value fiddling using a rapid, high-volume, systematic method. American Society for Nutrition (ASN): Advances and Controversies in Clinical Nutrition Annual Scientific Meeting. National Harbor, Maryland, USA, 2014.
+Kroeger CM, Brown AW, Allison DB. Simple text-mining to detect comparative p-hacking is sensitive to text searching variations. The Obesity Society (TOS): Annual Scientific Meeting. New Orleans, Louisiana, USA, 2016.
+
+Funding Information
+-------------------
+
+The presentation and development of these materials was supported by the National Institute of Diabetes, Digestive and Kidney Diseases of the National Institutes of Health (F32DK107157). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or any other organization.
