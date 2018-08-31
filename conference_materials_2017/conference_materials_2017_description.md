@@ -1,4 +1,4 @@
-Conference Materials 2016
+Conference Materials 2017
 ================
 Cynthia M. Kroeger, Andrew W. Brown
 8/28/2018
@@ -6,22 +6,23 @@ Cynthia M. Kroeger, Andrew W. Brown
 Project Description
 -------------------
 
-This project was implemented to further develop methods that were originated previously (DOI: 10.5281/zenodo.1406860) as part of a larger project (F32DK107157) to study common biases and statistical mistakes made in nutrition and obesity research. One such bias is p-hacking. As the poster describes in more detail, this project replicated a previously implemented rapid and high-volume method for detecting p-hacking in scientific literature, as well as refined previous methods. Details of these changes are described in more detail below. This work has since been further developed and presented on, and a manuscript with fully-developed methods is now being developed for publication.
+This project was implemented to further develop methods that were originated previously (DOI: 10.5281/zenodo.1406882) as part of a larger project (F32DK107157) to study common biases and statistical mistakes made in nutrition and obesity research. One such bias is p-hacking. As the poster describes in more detail, this project replicated a previously implemented rapid and high-volume method for detecting p-hacking in scientific literature. This work has since been further developed and presented on, and a manuscript with fully-developed methods is now being prepared for publication.
 
 An abbreviated description of these two projects is as follows:
 
 -   2014: Initial, manual search in PubMed
 -   2016: Replication of 2014, refinement of search methods, and inclusion of search within PubMed dietary supplement subset
+-   2017: Replication of 2016, excluding the initial 2014 method
 
 Conference Description
 ----------------------
 
-This work was presented at The Obesity Society (TOS) Annual Scientific Meeting in New Orleans, Louisiana, USA, in 2016.
+This work was presented at the 5th Workshop on Biostatistics and Bioinformatics in Atlanta, Georgia, USA, in 2017.
 
 Contact Information for Principal Investigator and Corresponding Author
 -----------------------------------------------------------------------
 
-Cynthia M. Kroeger, PhD, Postdoctoral Fellow, Charles Perkins Centre, School of Pharmacy, Faculty of Medicine and Health, The University of Sydney. <cynthia.kroeger@sydney.edu.au>
+-   Cynthia M. Kroeger, PhD, Postdoctoral Fellow, Charles Perkins Centre, School of Pharmacy, Faculty of Medicine and Health, The University of Sydney. <cynthia.kroeger@sydney.edu.au>
 
 At the time of presentation, Dr. Kroeger was a Postdoctoral Fellow at The University of Alabama at Birmingham.
 
@@ -32,11 +33,11 @@ Description of Supporting Materials
 
 This work was presented as a poster.
 
-**File name for poster:** conference\_materials\_2016\_poster.pdf
+**File name for poster:** conference\_materials\_2017\_poster.pdf
 
 ### Data
 
-**File name for dataset:** conference\_materials\_2016\_data.csv
+**File name for dataset:** conference\_materials\_2017\_data.csv
 
 **Full names and definitions of column headings**
 
@@ -159,84 +160,25 @@ Reasons for changes:
 
 ### PubMed query data file
 
-A .csv file with the search query conducted in PubMed on 5/9/16, plus extractions times also has been added. This was exported by PubMed after the search. The date column was added manually, as PubMed does not include this in the export of searches. The PubMed export for pm\_b\_org\_man and dss\_b\_org\_man could not be located. The search query was documented manually, and these details were added to the data file. This is a testament to the importance of preparing study materials for open sharing during the research process, as apposed to two years later.
-
-**File name for query export:** conference\_materials\_2016\_query.csv
-
-**Definitions of column headings**
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="47%" />
-<col width="27%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Column Heading</th>
-<th>Definition</th>
-<th>Possible Values</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>search</td>
-<td>Search number</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>query</td>
-<td>Query used to search PubMed</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>items</td>
-<td>Number of articles found by search query</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>time</td>
-<td>Time search was conducted (U.S.A. Central Time)</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>date</td>
-<td>Date of search</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>trial</td>
-<td>Study trial</td>
-<td>org = original trial; rep = replication</td>
-</tr>
-<tr class="odd">
-<td>method</td>
-<td>Search string method</td>
-<td>a = method a; b = method b</td>
-</tr>
-<tr class="even">
-<td>database</td>
-<td>Database data were collected from</td>
-<td>pm = PubMed; dss = PubMed Dietary Supplement Subset</td>
-</tr>
-</tbody>
-</table>
+The .csv file with the search query conducted in and exported by PubMed could not be located for this study. Instead, notes were located on the the search query obtained for the 2016 abstract. Details on this search query can be found here: *(insert 2016 DOI)*. Screenshots of chi-squared tests were located to obtain the data used for this poster and replicate analyses in R for open sharing. To better document the research process and enhance replicability, R and rEntrez were employed to conduct future studies on this topic. Files for this work will be available in the study repository upon completion.
 
 ### Analysis code
 
-**File name for analysis code:** conference\_materials\_2016\_code.R
+**File name for analysis code:** conference\_materials\_2017\_code.R
 
 **Study level naming convention:** database\_method\_trial\_mode
 
 -   database: pm = PubMed; dss = PubMed Dietary Supplement Subset
--   method: a = method a; method b = b
+-   a = method a; b = method b
 -   trial: org = original; rep = replication
 -   mode: man = manual search
 
 **Analysis level naming convention:** study\_function
 
--   study: pm\_a\_rep\_man, dss\_a\_org\_man, pm\_b\_org\_man, dss\_b\_org\_man
+-   study: pm\_a\_rep\_man, dss\_a\_rep\_man, pm\_b\_rep\_man, dss\_b\_rep\_man
 -   function: xsq = chisq.test; pd = percentage deviation
+
+Code was written by Dr. Kroeger, with assistance from Dr. Brown.
 
 A Note on How to Replicate this Study
 -------------------------------------
@@ -246,10 +188,9 @@ Because data were extracted from PubMed manually on a specific date, one would n
 Author Contribution
 -------------------
 
-Dr. Kroeger conducted the study, refined the methods, analyzed data, made the poster, and created the open science documents for the repository. Dr. Brown provided editorial assistance with methods, abstract, and open science documents. Dr. Allison originated the study, provided editorial assistance with the abstract, and is the senior author of the presentation.
+Dr. Kroeger conducted the study, refined the methods, analyzed data, made the poster, and created the open science documents for the repository. Dr. Brown provided editorial assistance with methods, poster preparation, and open science documents. Dr. Allison provided editorial assistance and is the senior author of the abstract.
 
-License Information
--------------------
+### License Information
 
 These materials are licensed under the Creative Commons Attribution Share Alike 4.0.
 
@@ -258,17 +199,17 @@ These materials are licensed under the Creative Commons Attribution Share Alike 
 Citation Information
 --------------------
 
-### Recommended citation for conference\_materials\_2016
+### Recommended citation for conference\_materials\_2017
 
 Please use the following to cite any of the supporting materials herein:
 
-Kroeger CM, Brown AW. Data and analysis code for published abstract: Simple text-mining to detect comparative p-hacking is sensitive to text searching variations. Zenodo. 2018. DOI: 10.5281/zenodo.1406882
+Kroeger CM, Brown AW. Data and analysis code for published abstract: Use of text-mining and comparative analysis to detect p-hacking in dietary supplement scientific literature. Zenodo. 2018. DOI:
 
 ### Recommended citation for published abstract
 
 Please use the following to cite the published abstract:
 
-Kroeger CM, Brown AW, Allison DB. Simple text-mining to detect comparative p-hacking is sensitive to text searching variations. The Obesity Society (TOS): Annual Scientific Meeting. New Orleans, Louisiana, USA, 2016.
+Kroeger CM, Brown AW, Allison DB. Use of text-mining and comparative analysis to detect p-hacking in dietary supplement scientific literature. 5th Workshop on Biostatistics and Bioinformatics. Atlanta, Georgia, USA. 2017.
 
 Funding Information
 -------------------

@@ -1,0 +1,5 @@
+﻿trial,method,database,date,mode,three_common,four_common,five_common,six_common,three_atypical,four_atypical,five_atypical,six_atypical
+rep,a,pm,5/9/16,man,3839,3092,435,559,1459,1227,126,217
+org,a,dss,5/9/16,man,130,99,18,18,21,20,2,3
+org,b,pm,5/9/16,man,3579,2872,407,527,2434,1993,237,367
+org,b,dss,5/9/16,man,149,114,17,18,30,27,2,6
