@@ -3,9 +3,7 @@ Description of p\_hacking\_pm Repository Contents
 Cynthia M. Kroeger
 31 August 2018
 
-This repository contains supporting materials for conference abstracts published on our work evaluating p-hacking in PubMed.
-
-Each folder herein contains supporting materials for each publication, respectively.
+This repository contains supporting materials for conference abstracts published on our work evaluating p-hacking in PubMed. Each folder herein contains supporting materials for each publication, respectively.
 
 Description of Folders:
 -----------------------
@@ -24,3 +22,9 @@ The types of supporting materials in each folder include:
 -   .pdf file of the associated presentation (e.g., poster and/or slides)
 -   .txt file with licensing information
 -   Other supporting materials to help explain and improve the reproducibility of our methods
+
+Recommendations for Citation of Supporting Materials
+----------------------------------------------------
+
+-   **Recommended citation for conference\_materials\_2014**: Kroeger CM, Brown AW. Data and analysis code for published abstract: Evidence of p-value fiddling using a rapid, high-volume, systematic method. Zenodo. 2018. DOI: 10.5281/zenodo.1406860
+-   **Recommended citation for conference\_materials\_2016**: Kroeger CM, Brown AW. Data and analysis code for published abstract: Simple text-mining to detect comparative p-hacking is sensitive to text searching variations. Zenodo. 2018. DOI:

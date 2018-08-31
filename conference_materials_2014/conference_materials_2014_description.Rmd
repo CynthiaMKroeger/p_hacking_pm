@@ -147,7 +147,7 @@ __File name for analysis code:__ LICENSE.txt
 
 Please use the following to cite any of the supporting materials herein: 
 
-Kroeger CM, Brown AW. Data and analysis code from published abstract: Evidence of p-value fiddling using a rapid, high-volume, systematic method. Zenodo. 2018. DOI: 10.5281/zenodo.1406860
+Kroeger CM, Brown AW. Data and analysis code for published abstract: Evidence of p-value fiddling using a rapid, high-volume, systematic method. Zenodo. 2018. DOI: 10.5281/zenodo.1406860
 
 
 ### Recommended citation for published 2014 abstract 

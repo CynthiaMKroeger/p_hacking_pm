@@ -262,7 +262,7 @@ Citation Information
 
 Please use the following to cite any of the supporting materials herein:
 
-Kroeger CM, Brown AW. Data from published abstract: Simple text-mining to detect comparative p-hacking is sensitive to text searching variations. Zenodo. 2018. DOI:
+Kroeger CM, Brown AW. Data and analysis code for published abstract: Simple text-mining to detect comparative p-hacking is sensitive to text searching variations. Zenodo. 2018. DOI:
 
 ### Recommended citation for published abstract
 
