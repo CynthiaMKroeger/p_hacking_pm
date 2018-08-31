@@ -1,0 +1,21 @@
+﻿search,query,items,time,date
+#22,#14 AND #12,181,11:18,8/25/14
+#21,#14 AND #11,103,11:17,8/25/14
+#20,#14 AND #10,1011,11:17,8/25/14
+#19,#14 AND #9,1209,11:17,8/25/14
+#18,#13 AND #12,465,11:16,8/25/14
+#17,#13 AND #11,364,11:16,8/25/14
+#16,#13 AND #10,2480,11:16,8/25/14
+#15,#13 AND #9,3134,11:15,8/25/14
+#14,#8 NOT #7,162910,11:11,8/25/14
+#13,#7 NOT #8,83881,11:11,8/25/14
+#12,#6 NOT (#1 OR #3 OR #5),17059,11:10,8/25/14
+#11,#5 NOT (#1 OR #3 OR #6),10323,11:08,8/25/14
+#10,#3 NOT (#1 OR #5 OR #6),90871,11:07,8/25/14
+#9,#1 NOT (#3 OR #5 OR #6),111569,11:06,8/25/14
+#8,"Search nonparametric [tiab] OR non-parametric [tiab] OR wlicoxon-rank [tiab] OR ""wilcoxon rank"" [tiab] OR kruskal-wallis [tiab] OR ""kruskal wallis"" [tiab] OR transformation [tiab] OR (outlier* [tiab] AND remov* [tiab])",166384,11:04,8/25/14
+#7,"Search t-test [tiab] OR anova [tiab] OR ancova [tiab] OR ""mixed model"" [tiab] ",87355,11:02,8/25/14
+#6,Search p=.06* [tiab] OR p=0.06*[tiab] ,25343,11:01,8/25/14
+#5,"Search (p 05,05[tiab] OR p 050[tiab] OR p 0500[tiab] OR p 05006[tiab] OR p 0501[tiab] OR p 0501a[tiab] OR p 0502[tiab] OR p 0505[tiab] OR p 0507[tiab] OR p 051[tiab] OR p 0511[tiab] OR p 0513[tiab] OR p 0514[tiab] OR p 0515[tiab] OR p 0518[tiab] OR p 0519[tiab] OR p 052[tiab] OR p 0529[tiab] OR p 053[tiab] OR p 0537[tiab] OR p 054[tiab] OR p 0542[tiab] OR p 055[tiab] OR p 0557[tiab] OR p 056[tiab] OR p 0566[tiab] OR p 057[tiab] OR p 0571[tiab] OR p 0573[tiab] OR p 058[tiab] OR p 0583[tiab] OR p 0585[tiab] OR p 0588[tiab] OR p 059[tiab] OR p 0591[tiab] OR p 0594[tiab] OR p 0595[tiab] OR p 0597[tiab]) OR (p 0 05,15[tiab] OR p 0 05,863[tiab] OR p 0 05,95[tiab] OR p 0 050[tiab] OR p 0 0500[tiab] OR p 0 0501[tiab] OR p 0 0502[tiab] OR p 0 0503[tiab] OR p 0 0504[tiab] OR p 0 0505[tiab] OR p 0 0505385[tiab] OR p 0 0506[tiab] OR p 0 0507[tiab] OR p 0 0508[tiab] OR p 0 0509[tiab] OR p 0 051[tiab] OR p 0 0510[tiab] OR p 0 0511[tiab] OR p 0 0512[tiab] OR p 0 0513[tiab] OR p 0 0514[tiab] OR p 0 0515[tiab] OR p 0 0516[tiab] OR p 0 0517[tiab] OR p 0 0518[tiab] OR p 0 0519[tiab] OR p 0 052[tiab] OR p 0 0520[tiab] OR p 0 0522[tiab] OR p 0 0523[tiab] OR p 0 0524[tiab] OR p 0 0525[tiab] OR p 0 052574[tiab] OR p 0 0526[tiab] OR p 0 0527[tiab] OR p 0 0529[tiab] OR p 0 053[tiab] OR p 0 0530[tiab] OR p 0 0531[tiab] OR p 0 0532[tiab] OR p 0 0533[tiab] OR p 0 0534[tiab] OR p 0 0535[tiab] OR p 0 0536[tiab] OR p 0 0537[tiab] OR p 0 0539[tiab] OR p 0 054[tiab] OR p 0 0540[tiab] OR p 0 0541[tiab] OR p 0 0542[tiab] OR p 0 0543[tiab] OR p 0 0544[tiab] OR p 0 0545[tiab] OR p 0 0546[tiab] OR p 0 0547[tiab] OR p 0 0548[tiab] OR p 0 0549[tiab] OR p 0 055[tiab] OR p 0 0550[tiab] OR p 0 0551[tiab] OR p 0 0552[tiab] OR p 0 0553[tiab] OR p 0 0554[tiab] OR p 0 05548[tiab] OR p 0 0556[tiab] OR p 0 0557[tiab] OR p 0 0558[tiab] OR p 0 0559[tiab] OR p 0 056[tiab] OR p 0 0560[tiab] OR p 0 0561[tiab] OR p 0 0562[tiab] OR p 0 0563[tiab] OR p 0 0564[tiab] OR p 0 0566[tiab] OR p 0 0567[tiab] OR p 0 0568[tiab] OR p 0 0569[tiab] OR p 0 057[tiab] OR p 0 0570[tiab] OR p 0 0571[tiab] OR p 0 0572[tiab] OR p 0 0573[tiab] OR p 0 0574[tiab] OR p 0 0575[tiab] OR p 0 0576[tiab] OR p 0 05760[tiab] OR p 0 0577[tiab] OR p 0 0578[tiab] OR p 0 0579[tiab] OR p 0 058[tiab] OR p 0 0580[tiab] OR p 0 0581[tiab] OR p 0 0582[tiab] OR p 0 0583[tiab] OR p 0 0584[tiab] OR p 0 05846[tiab] OR p 0 0585[tiab] OR p 0 0586[tiab] OR p 0 0587[tiab] OR p 0 0588[tiab] OR p 0 0589[tiab] OR p 0 05891[tiab] OR p 0 059[tiab] OR p 0 0590[tiab] OR p 0 0591[tiab] OR p 0 0592[tiab] OR p 0 0593[tiab] OR p 0 0594[tiab] OR p 0 0595[tiab] OR p 0 0596[tiab] OR p 0 0597[tiab] OR p 0 0598[tiab] OR p 0 0599[tiab] OR p 0 05a[tiab] OR p 0 05and[tiab] OR p 0 05for[tiab] OR p 0 05u[tiab] OR p 0 05vs[tiab] OR p 0 05vsho[tiab])",16409,10:59,8/25/14
+#3,Search p=.04* [tiab] OR p=0.04* [tiab] ,130032,10:55,8/25/14
+#1,Search p=.03* [tiab] OR p=0.03* [tiab]  ,151564,10:53,8/25/14
