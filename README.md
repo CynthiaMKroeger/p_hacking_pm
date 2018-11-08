@@ -33,4 +33,6 @@ Recommendations for Citation of Supporting Materials
 -   **Recommended citation for conference\_materials\_2017**: Kroeger CM, Brown AW. Data and analysis code for published abstract: Use of text-mining and comparative analysis to detect p-hacking in dietary supplement scientific literature. Zenodo. 2018. DOI: 10.5281/zenodo.1406885
 -   **Recommended citation for conference\_materials\_2018**: Kroeger CM, Brown AW. Data and analysis code for published abstract: Detection of p-hacking in biomedical and dietary supplement scientific literature: Use of open science R packages to improve reproducibility and research transparency. Zenodo. 2018. DOI: 10.5281/zenodo.1406892
 
+
+Project DOI: 
 [![DOI](https://zenodo.org/badge/146833597.svg)](https://zenodo.org/badge/latestdoi/146833597)
