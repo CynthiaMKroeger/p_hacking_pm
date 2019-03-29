@@ -88,7 +88,7 @@ License Information
 
 These materials are licensed under the Creative Commons Attribution Share Alike 4.0.
 
-**File name for analysis code:** LICENSE.txt
+**File name for license:** LICENSE.txt
 
 Citation Information
 --------------------
