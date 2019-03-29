@@ -101,7 +101,7 @@ Dr. Kroeger conducted the study, refined the methods, analyzed data, made the pr
 
 These materials are licensed under the Creative Commons Attribution Share Alike 4.0.
 
-__File name for analysis code:__ LICENSE.txt
+__File name for license:__ LICENSE.txt
 
 
 ## Citation Information
